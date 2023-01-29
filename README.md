@@ -3,7 +3,7 @@
 ### Links
 
 -   Solution URL: https://github.com/ProgrammerOwais/CalculatorApp.github.io
--   Live Site URL: https://programmerowais.github.io/myCalculator.github.io/
+-   Live Site URL: https://programmerowais.github.io/CalculatorApp.github.io/
 
 ### Built with
 
