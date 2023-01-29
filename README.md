@@ -30,6 +30,6 @@ starting any project.
 
 ## Author
 
--   Website - [Portfolio] (https://programmerowais.github.io/MyPortfolio.github.io/)
+-   Website - [Portfolio](https://programmerowais.github.io/MyPortfolio.github.io/)
 -   Frontend Mentor - [@ProgrammerOwais](https://www.frontendmentor.io/profile/ProgrammerOwais)
 -   Twitter - [@Muhammad Owais](https://twitter.com/Muhamma92019025)
