@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: calcFont;
+    src: url(https://fonts.google.com/specimen/League+Spartan);
+    font-weight: 700;
+}
+.light-theme {
+    --mainBg: hsl(0, 0%, 90%);
+    --outputDivBg: hsl(0, 0%, 93%);
+    --inputDivBg: hsl(0, 5%, 81%);
+    --btnsText: hsl(60, 10%, 19%);
+    --btnsBg: hsl(0, 0%, 90%);
+    --btnsShad: hsl(35, 11%, 61%);
+    --btnsHov: hsl(0, 0%, 100%);
+    --equalkeyColor: hsl(0, 0%, 100%);
+    --equalkeyBg: hsl(25, 99%, 27%);
+    --equalHov: hsl(25, 98%, 40%);
+    --delRestColor: hsl(0, 0%, 100%);
+    --delRestBg: hsl(185, 58%, 25%);
+    --delRestHov: hsl(185, 42%, 37%);
+    --headThemeOutput: hsl(60, 10%, 19%);
+    --white: hsl(0, 0%, 100%);
+}
+.dark-theme {
+    --mainBg: hsl(222, 26%, 31%);
+    --outputDivBg: hsl(224, 36%, 15%);
+    --inputDivBg: hsl(223, 31%, 20%);
+    --btnsText: hsl(224, 28%, 35%);
+    --btnsBg: hsl(30, 25%, 89%);
+    --btnsShad: hsl(28, 16%, 65%);
+    --btnsHov: hsl(0, 0%, 100%);
+    --equalkeyColor: hsl(0, 0%, 100%);
+    --equalkeyBg: hsl(6, 70%, 34%);
+    --equalHov: hsl(6, 63%, 50%);
+    --delRestColor: hsl(0, 0%, 100%);
+    --delRestBg: hsl(224, 28%, 35%);
+    --delRestHov: hsl(225, 21%, 49%);
+    --headThemeOutput: hsl(30, 25%, 89%);
+    /*******************************/
+}
+.blue-theme {
+    --mainBg: hsl(268, 75%, 9%);
+    --outputDivBg: hsl(268, 47%, 21%);
+    --inputDivBg: hsl(268, 47%, 21%);
+    --btnsText: hsl(52, 100%, 62%);
+    --btnsBg: hsl(268, 71%, 12%);
+    --btnsShad: hsl(290, 70%, 36%);
+    --btnsHov: hsl(281, 89%, 26%);
+    --equalkeyColor: hsl(198, 20%, 13%);
+    --equalkeyBg: hsl(176, 100%, 44%);
+    --equalHov: hsl(177, 92%, 70%);
+    --delRestColor: hsl(0, 0%, 100%);
+    --delRestBg: hsl(290, 70%, 36%);
+    --delRestHov: hsl(285, 91%, 52%);
+    --headThemeOutput: hsl(52, 100%, 62%);
+    --white: hsl(0, 0%, 100%);
+    /*******************************/
+    --t1mainBg: hsl(268, 75%, 9%);
+    --t1keyBg: hsl(268, 71%, 12%);
+    --t1scrBg: hsl(281, 89%, 26%);
+    --t1darkKey: hsl(285, 91%, 52%);
+    --t1darkKeyShdw: hsl(176, 100%, 44%);
+    --t1redKey: hsl(177, 92%, 70%);
+    --t1redKeyShdw: hsl(268, 47%, 21%);
+    --t1greyKey: hsl(290, 70%, 36%);
+    --t1greyKeyShdw: hsl(52, 100%, 62%);
+    --t1Textdarkblue: hsl(198, 20%, 13%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--mainBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    width: 300px;
+    height: 450px;
+    /* border: 2px solid red; */
+}
+
+.main-divs {
+    width: 100%;
+    background-color: var(--inputDivBg);
+    border-radius: 10px;
+    /* border: 1px solid yellow; */
+}
+.theme-div {
+    position: relative;
+    /* height: 50px; */
+    background-color: var(--mainBg);
+    /* border: 1px solid red; */
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme-changing {
+    position: relative;
+    top: 5px;
+    width: 50px;
+    height: 20px;
+    background-color: var(--inputDivBg);
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 3px;
+}
+.theme-circle {
+    position: relative;
+    /* left: 13px; */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--equalHov);
+    cursor: pointer;
+    transition: all 300ms;
+}
+.theme-text {
+    position: absolute;
+    text-transform: uppercase;
+    left: -45px;
+    letter-spacing: 0.5px;
+    font-size: 0.6rem;
+}
+.theme-num {
+    position: absolute;
+    top: -15px;
+    left: 6px;
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+}
+.theme-heading,
+.theme-num,
+.theme-text,
+.calc-output {
+    color: var(--headThemeOutput);
+    font-weight: bold;
+}
+.theme-heading {
+    font-size: 1.5rem;
+}
+.output-div {
+    margin-bottom: 1rem;
+}
+.calc-output {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 4;
+    background-color: var(--outputDivBg);
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.top-keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+.btns {
+    font-size: 1.2rem;
+    color: var(--btnsText);
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 22%;
+    background-color: var(--btnsBg);
+    margin: 0.3rem auto;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: inset 0px -1.5px 0px 0px var(--btnsShad);
+    cursor: pointer;
+    /* transition: all; */
+}
+.btns:active {
+    /* box-shadow: 0.3px 0.3px 0px 1px var(--t1greyKeyShdw); */
+    transform: scale(0.97);
+}
+.btns:hover {
+    background-color: var(--btnsHov);
+}
+.bottom-keys {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+}
+.bottom-btns {
+    width: 47%;
+    padding: 0.5rem;
+    margin: 0.3rem auto;
+}
+.reset,
+.del {
+    background-color: var(--delRestBg);
+    box-shadow: inset 0px -1px 0 1px var(--delRestHov);
+    color: var(--delRestColor);
+}
+.equal {
+    background-color: var(--equalkeyBg);
+    box-shadow: inset 0px -1px 0 1px var(--equalHov);
+    color: var(--equalkeyColor);
+}
+
+.reset:hover,
+.del:hover {
+    background-color: var(--delRestHov);
+    box-shadow: inset 0px -1px 0 1px var(--delRestBg);
+}
+.equal:hover {
+    background-color: var(--equalHov);
+    box-shadow: inset 0px -1px 0 1px var(--equalkeyBg);
+}
