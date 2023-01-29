@@ -2,7 +2,7 @@
 
 ### Links
 
--   Solution URL: (https://your-solution-url.com)
+-   Solution URL: https://github.com/ProgrammerOwais/CalculatorApp.github.io
 -   Live Site URL: https://programmerowais.github.io/myCalculator.github.io/
 
 ### Built with
@@ -30,6 +30,6 @@ starting any project.
 
 ## Author
 
--   Website - [Muhammad Owais] (https://programmerowais.github.io/MyPortfolio.github.io/
+-   Website - [Portfolio] (https://programmerowais.github.io/MyPortfolio.github.io/
 -   Frontend Mentor - [@ProgrammerOwais](https://www.frontendmentor.io/profile/ProgrammerOwais)
 -   Twitter - [@Muhammad Owais](https://twitter.com/Muhamma92019025)
