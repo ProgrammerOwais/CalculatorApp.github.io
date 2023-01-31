@@ -81,12 +81,8 @@ body {
     height: 100vh;
 }
 .container {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     width: 300px;
     height: 450px;
-    /* border: 2px solid red; */
 }
 
 .main-divs {
@@ -130,7 +126,7 @@ body {
     position: absolute;
     text-transform: uppercase;
     left: -45px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     font-size: 0.6rem;
 }
 .theme-num {

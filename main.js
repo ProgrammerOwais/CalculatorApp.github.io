@@ -1,7 +1,6 @@
 /*
+// Calculator righting direction.
 // Cursor moving error
-// Naming the variables & functions for easy to read.
-// By entering = again & again it should manipulate previous operation again & again.
 
 */
 // Here in many place I comment console.log() => only for checking how it

@@ -12,6 +12,13 @@
 ✅Flexbox
 ✅JavaScript
 
+### One Extra Feature
+
+I checked many calculators & their design & fuctionalities are awesome
+but one thing which I noticed many calculators work on click base & they have
+no keyboard button pressing feature, So I was thinking why not to add this feature
+to make a little bit unique from other🥰.
+
 ### What I learned
 
 This was really awesome, challenge, It did took a little bit extra time
