@@ -6,7 +6,7 @@
 // Here in many place I comment console.log() => only for checking how it
 // is working at the backend
 /***************************** Theme changing functionality *******/
-(function () {
+function autoexectue() {
   if (localStorage.getItem("theme") == "light-theme") {
     setTheme("light-theme");
   } else if (localStorage.getItem("theme") == "blue-theme") {
@@ -14,7 +14,8 @@
   } else {
     setTheme("dark-theme");
   }
-});
+}
+autoexectue();
 let themeChange = document.querySelector(".theme-circle");
 let t = 1; // For theme numbering
 let change = 0; // Tracking the theme
